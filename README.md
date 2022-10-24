@@ -80,7 +80,7 @@ For Project 3 the evaluation categories are as follows:<br>
 - Does the student consider the audience and the primary and secondary stakeholders?
 
 **Data Collection**
-- Was enough data gathered to generate a significant result?
+- Was enough data gathered to generate a significant result? (At least 1000 posts per subreddit)
 - Was data collected that was useful and relevant to the project?
 - Was data collection and storage optimized through custom functions, pipelines, and/or automation?
 - Was thought given to the server receiving the requests such as considering number of requests per second?
