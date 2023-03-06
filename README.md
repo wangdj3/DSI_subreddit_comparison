@@ -1,12 +1,7 @@
-# ![banner](https://git.generalassemb.ly/wangdj3/project-3/blob/master/assets/Banner.jpg)
-
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
-
-
-
-
 # Project 3: Standardized Test Analysis
 
+# ![banner](https://git.generalassemb.ly/wangdj3/project-3/blob/master/assets/Banner.jpg)
+## A Classification Analysis of r/anime vs. r/Naruto
 
 ---
 ## Problem Statement
@@ -31,9 +26,8 @@ The Random Forest (with unlimited depth, single-word n-grams only, and without u
 |3|Naive Bayes|86.28%|
 |4|K Nearest Neighbors|75.19%|
 
-# ![RandomForest_ConfusionMatrix](https://github.com/wangdj3/project-3/blob/master/assets/RandomForest_ConfusionMatrix.png?raw=true)
 
-# ![RandomForest_ConfusionMatrix_alt](https://git.generalassemb.ly/wangdj3/project-3/blob/master/assets/RandomForest_ConfusionMatrix.png)
+# ![RandomForest_ConfusionMatrix](https://git.generalassemb.ly/wangdj3/project-3/blob/master/assets/RandomForest_ConfusionMatrix.png)
 
 
 Top 15 Most Common Words in Combined Sample:
@@ -56,6 +50,7 @@ Top 15 Most Common Words in Combined Sample:
 |14|think|905|
 |15|watch|791|
 
+# ![15 most common words in combined sample](https://git.generalassemb.ly/wangdj3/project-3/blob/master/assets/15_most_common_words.png)
 
 ---
 ## Data Background
