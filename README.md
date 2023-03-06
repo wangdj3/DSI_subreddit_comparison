@@ -1,168 +1,164 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 3: Web APIs & NLP
-
-### Description
-
-In week four we've learned about a few different classifiers. In week five we'll learn about webscraping, APIs, and Natural Language Processing (NLP). This project will put those skills to the test.
-
-For project 3, your goal is two-fold:
-1. Using [Pushshift's](https://github.com/pushshift/api) API, you'll collect posts from two subreddits of your choosing.
-2. You'll then use NLP to train a classifier on which subreddit a given post came from. This is a binary classification problem.
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
 
 
-#### About the API
-
-Pushshift's API is fairly straightforward. For example, if I want the posts from [`/r/boardgames`](https://www.reddit.com/r/boardgames), all I have to do is use the following url: https://api.pushshift.io/reddit/search/submission?subreddit=boardgames
-
-To help you get started, we have a primer video on how to use the API: https://youtu.be/AcrjEWsMi_E
-
-**NOTE:** Pushshift now limits you to 100 posts per request (no longer the 500 in the screencast).
-
----
-
-### Requirements
-
-- Gather and prepare your data using the `requests` library.
-- **Create and compare two models**. Any two classifiers at least of your choosing: random forest, logistic regression, KNN, SVM, etc.
-- A Jupyter Notebook with your analysis for a peer audience of data scientists.
-- An executive summary of your results.
-- A short presentation outlining your process and findings for a semi-technical audience.
-
-**Pro Tip:** You can find a good example executive summary [here](https://www.proposify.biz/blog/executive-summary).
-
----
-
-### Necessary Deliverables / Submission
-
-- Code must be in at least one clearly commented Jupyter Notebook.
-- A readme/executive summary in markdown.
-- You must submit your slide deck as a PDF.
-- Materials must be submitted by **10:00 AM (EST) on Monday, March 6th**.
-
----
-
-## Rubric
-Your instructors will evaluate your project (for the most part) using the following criteria.  You should make sure that you consider and/or follow most if not all of the considerations/recommendations outlined below **while** working through your project.
-
-For Project 3 the evaluation categories are as follows:<br>
-**The Data Science Process**
-- Problem Statement
-- Data Collection
-- Data Cleaning & EDA
-- Preprocessing & Modeling
-- Evaluation and Conceptual Understanding
-- Conclusion and Recommendations
-
-**Organization and Professionalism**
-- Organization
-- Visualizations
-- Python Syntax and Control Flow
-- Presentation
-
-**Scores will be out of 30 points based on the 10 categories in the rubric.** <br>
-*3 points per section*<br>
-
-| Score | Interpretation |
-| --- | --- |
-| **0** | *Project fails to meet the minimum requirements for this item.* |
-| **1** | *Project meets the minimum requirements for this item, but falls significantly short of portfolio-ready expectations.* |
-| **2** | *Project exceeds the minimum requirements for this item, but falls short of portfolio-ready expectations.* |
-| **3** | *Project meets or exceeds portfolio-ready expectations; demonstrates a thorough understanding of every outlined consideration.* |
 
 
-### The Data Science Process
-
-**Problem Statement**
-- Is it clear what the goal of the project is?
-- What type of model will be developed?
-- How will success be evaluated?
-- Is the scope of the project appropriate?
-- Is it clear who cares about this or why this is important to investigate?
-- Does the student consider the audience and the primary and secondary stakeholders?
-
-**Data Collection**
-- Was enough data gathered to generate a significant result? (At least 1000 posts per subreddit)
-- Was data collected that was useful and relevant to the project?
-- Was data collection and storage optimized through custom functions, pipelines, and/or automation?
-- Was thought given to the server receiving the requests such as considering number of requests per second?
-
-**Data Cleaning and EDA**
-- Are missing values imputed/handled appropriately?
-- Are distributions examined and described?
-- Are outliers identified and addressed?
-- Are appropriate summary statistics provided?
-- Are steps taken during data cleaning and EDA framed appropriately?
-- Does the student address whether or not they are likely to be able to answer their problem statement with the provided data given what they've discovered during EDA?
-
-**Preprocessing and Modeling**
-- Is text data successfully converted to a matrix representation?
-- Are methods such as stop words, stemming, and lemmatization explored?
-- Does the student properly split and/or sample the data for validation/training purposes?
-- Does the student test and evaluate a variety of models to identify a production algorithm (**AT MINIMUM:** two models)?
-- Does the student defend their choice of production model relevant to the data at hand and the problem?
-- Does the student explain how the model works and evaluate its performance successes/downfalls?
-
-**Evaluation and Conceptual Understanding**
-- Does the student accurately identify and explain the baseline score?
-- Does the student select and use metrics relevant to the problem objective?
-- Does the student interpret the results of their model for purposes of inference?
-- Is domain knowledge demonstrated when interpreting results?
-- Does the student provide appropriate interpretation with regards to descriptive and inferential statistics?
-
-**Conclusion and Recommendations**
-- Does the student provide appropriate context to connect individual steps back to the overall project?
-- Is it clear how the final recommendations were reached?
-- Are the conclusions/recommendations clearly stated?
-- Does the conclusion answer the original problem statement?
-- Does the student address how findings of this research can be applied for the benefit of stakeholders?
-- Are future steps to move the project forward identified?
-
-
-### Organization and Professionalism
-
-**Project Organization**
-- Are modules imported correctly (using appropriate aliases)?
-- Are data imported/saved using relative paths?
-- Does the README provide a good executive summary of the project?
-- Is markdown formatting used appropriately to structure notebooks?
-- Are there an appropriate amount of comments to support the code?
-- Are files & directories organized correctly?
-- Are there unnecessary files included?
-- Do files and directories have well-structured, appropriate, consistent names?
-
-**Visualizations**
-- Are sufficient visualizations provided?
-- Do plots accurately demonstrate valid relationships?
-- Are plots labeled properly?
-- Are plots interpreted appropriately?
-- Are plots formatted and scaled appropriately for inclusion in a notebook-based technical report?
-
-**Python Syntax and Control Flow**
-- Is care taken to write human readable code?
-- Is the code syntactically correct (no runtime errors)?
-- Does the code generate desired results (logically correct)?
-- Does the code follows general best practices and style guidelines?
-- Are Pandas functions used appropriately?
-- Are `sklearn` and `NLTK` methods used appropriately?
-
-**Presentation**
-- Is the problem statement clearly presented?
-- Does a strong narrative run through the presentation building toward a final conclusion?
-- Are the conclusions/recommendations clearly stated?
-- Is the level of technicality appropriate for the intended audience?
-- Is the student substantially over or under time?
-- Does the student appropriately pace their presentation?
-- Does the student deliver their message with clarity and volume?
-- Are appropriate visualizations generated for the intended audience?
-- Are visualizations necessary and useful for supporting conclusions/explaining findings?
+# Project 3: Standardized Test Analysis
 
 
 ---
+## Problem Statement
 
-### Why did we choose this project for you?
-This project covers three of the biggest concepts we cover in the class: Classification Modeling, Natural Language Processing and Data Wrangling/Acquisition.
+During a recent expedition to the ruins of alpha-Earth, an exploration team recovered a semi-operable server containing data from the popular 21st century website Reddit, with intact data from two notable subreddits: r/anime and r/Naruto.  
 
-Part 1 of the project focuses on **Data wrangling/gathering/acquisition**. This is a very important skill as not all the data you will need will be in clean CSVs or a single table in SQL.  There is a good chance that wherever you land you will have to gather some data from some unstructured/semi-structured sources; when possible, requesting information from an API, but sometimes scraping it because they don't have an API (or it's terribly documented).
+Additionally, the team discovered a manual on early 21st century data science techniques for classification and machine learning.  These data remnants were transmitted to my team at the Neo-Earth Research Council for further study.  
 
-Part 2 of the project focuses on **Natural Language Processing** and converting standard text data (like Titles and Comments) into a format that allows us to analyze it and use it in modeling.
+Combining the wisdom of these two cultural artifacts, we use these 21st century methods to analyze this 21st century data.  Fascinating, no?  We explored the use of natural language processing and several classification algorithms to differentiate between posts from r/anime vs. those from r/Naruto.  
 
-Part 3 of the project focuses on **Classification Modeling**.  Given that project 2 was a regression focused problem, we needed to give you a classification focused problem to practice the various models, means of assessment and preprocessing associated with classification.   
+We present these findings at the 3023 Mars Conference on Pre World War 3 Humanoid Anthropology.  
+
+---
+## Data Background
+
+Our study used publicly available data from the California Department of Education regarding:
+- ACT performance/participation [1]
+- SAT performance/participation [2]
+- Overall graduation and college matriculation rates [3]
+
+…for the 2018-2019 school year.
+
+---
+## Data Dictionary
+
+#### Shared across ALL datasets
+|Feature|Type|Dataset|Description|
+|---|---|---|---|
+|rtype|object|ACT, SAT, CGR|Record Type: C=County\| D=District\| S=School\| X=State|
+|sname|object|ACT, SAT, CGR|School Name\| N/A = County or District Level Record|
+|dname|object|ACT, SAT, CGR|District Name\| N/A = County Level Record|
+|cname|object|ACT, SAT, CGR|County Name|
+
+#### Originating from the ACT dataset
+|Feature|Type|Dataset|Description|
+|---|---|---|---|
+|enroll12|float|ACT|Enrollment of Grade 12 (as reported from the ACT data set)|
+|num_act_takr|float|ACT|Number of (ACT) Test Takers|
+|avg_scr_read|float|ACT|Average ACT Reading Score|
+|avg_scr_eng|float|ACT|Average ACT  English Score|
+|avg_scr_math|float|ACT|Average ACT Math Score|
+|avg_scr_sci|float|ACT|Average ACT Science Score|
+|num_ge_21|float|ACT|Number of Test Takers Whose ACT Composite Scores Are Greater or Equal to 21.|
+|pct_ge_21|float|ACT|Percent of Test Takers Whose ACT Composite Scores Are Greater or Equal to 21.|
+|pct_act_takr|float|ACT|Percent of Grade 12 Enrollees Who Take the ACT|
+|||||
+
+#### Originating from the SAT dataset
+|Feature|Type|Dataset|Description|
+|---|---|---|---|
+|enroll12sat|float|SAT|Enrollment of Grade 12 (as reported from the SAT data set)|
+|num_sat_takr12|float|SAT|Number of (SAT) Test Takers Grade 12|
+|num_erw_benchmark12|float|SAT|The number meeting the Evidence-Based Reading & Writing (ERW) benchmark established by the College Board based on the New 2016 SAT test format as of March 2016 for Grade 12.|
+|pct_erw_benchmark12|float|SAT|The percent of students who met or exceeded the benchmark for Evidence-Based Reading & Writing (ERW) test for Grade 12.|
+|num_math_benchmark12|float|SAT|The number of students who met or exceeded the benchmark for the New SAT Math test format as of March 2016 for Grade 12.|
+|pct_math_benchmark12|float|SAT|The percent of students who met or exceeded the benchmark for SAT Math test for Grade 12.|
+|enroll11sat|float|SAT|Enrollment of Grade 11 (as reported from the SAT data set)|
+|num_sat_takr11|float|SAT|Number of (SAT) Test Takers Grade 11|
+|num_erw_benchmark11|float|SAT|The number meeting the Evidence-Based Reading & Writing (ERW) benchmark established by the College Board based on the New 2016 SAT test format as of March 2016 for Grade 11.|
+|pct_erw_benchmark11|float|SAT|The percent of students who met or exceeded the benchmark for Evidence-Based Reading & Writing (ERW) test for Grade 11.|
+|num_math_benchmark11|float|SAT|The number of students who met or exceeded the benchmark for the New SAT Math test format as of March 2016 for Grade 11.|
+|pct_math_benchmark11|float|SAT|The percent of students who met or exceeded the benchmark for SAT Math test for Grade 11.|
+|tot_num_both_benchmark12|float|SAT|The total number of students who met the benchmark of both Evidence-Based Reading & Writing (ERW) and Math Grade 12.|
+|pct_both_benchmark12|float|SAT|The percent of students who met the benchmark of both Evidence-Based Reading & Writing (ERW) and Math Grade 12.|
+|tot_num_both_benchmark11|float|SAT|The total number of students who met the benchmark of both Evidence-Based Reading & Writing (ERW) and Math Grade 11.|
+|pct_both_benchmark11|float|SAT|The percent of students who met the benchmark of both Evidence-Based Reading & Writing (ERW) and Math Grade 11.|
+|pct_sat_takr12|float|SAT|The percent of 12th graders who took the SAT. = 'num_sat_takr12'/'enroll12sat'|
+|||||
+
+#### Originating from the CGR dataset
+|Feature|Type|Dataset|Description|
+|---|---|---|---|
+|completer_type|object|CGR|"AGY = Count of graduates meeting a-g requirements for admission into a University of California (UC) or California State University (CSU) school. AGN = Count of graduates not meeting a-g requirements for admission into a UC or CSU school. NGC = Count of non-graduate completers not meeting a-g requirements for admission into a UC or CSU school. TA = Total (all high school completers)."|
+|hs_completers|float|CGR|The number of students who graduated from a California public high school with a regular high school diploma or who otherwise successfully finished high school as a non-graduate completer during the reporting period for the associated academic year |
+|enrolled_college_total|float|CGR|The total number of California public high school completers who enrolled in any postsecondary institution within 16 months of completing high school.|
+|college_going_rate|float|CGR|The total percentage of California public high school completers who enrolled in any public or private postsecondary institution (in-state or out-of-state) within 16 months of completing high school.|
+|not_enrolled_college|float|CGR|The number of California public high school completers (1) who did not enroll in a public or private postsecondary institution inside or outside California within 12 or 16 months of completing high school or (2) whose postsecondary educational directory information records were blocked from being shared by the student or institution pursuant to privacy rights outlined in the Family Educational Rights and Privacy Act (FERPA).|
+
+
+---
+## Primary Findings
+
+- Fairly good correlation suggests that SAT & ACT are in rough agreement about their findings (i.e., how well a given student performs on verbal or math)
+
+- Though they are both “messy” datasets, the tighter clustering (lower variance) on the SAT scores over the ACT scores suggests a stronger correlation (& predicting ability) on whether a student will go to college or not as predicted by meeting benchmark scores on given test.
+
+- There is mild agreement between our metrics and those of U.S. News and World Report for ranking high schools.
+
+
+
+### My "Top 10" Lists for as generated using various criteria:
+
+#### Schools
+||College-Going Rate|% students meeting SAT benchmarks|% students meeting ACT benchmarks|
+|---|---|---|---|
+|1|Independence High (Alternative)|William & Marian Ghidotti High|Oxford Academy|
+|2|Delta High|Whitney (Gretchen) High|River Valley Charter|
+|3|Biggs High|Monta Vista High|Santa Susana High|
+|4|South Sutter Charter|Mission San Jose High|Whitney (Gretchen) High|
+|5|Selma High|California Academy of Mathematics and Science|Piedmont High|
+|6|Emery Secondary|Lynbrook High|Monta Vista High|
+|7|Rancho Campana High|Saratoga High|Saratoga High|
+|8|Saint Helena High|Oxford Academy|Mission San Jose High|
+|9|Lemoore Middle College High|Henry M. Gunn High|Lynbrook High|
+|10|Terra Nova High|Northwood High|Canyon Crest Academy|
+|||||
+
+#### Districts
+||College-Going Rate|% students meeting SAT benchmarks|% students meeting ACT benchmarks|
+|---|---|---|---|
+|1|Orcutt Union Elementary|La Canada Unified|Lakeside Union Elementary|
+|2|South Pasadena Unified|San Marino Unified|Los Gatos-Saratoga Joint Union High|
+|3|La Canada Unified|Los Gatos-Saratoga Joint Union High|Santa Cruz County Office of Education|
+|4|Temple City Unified|Palo Alto Unified|Piedmont City Unified|
+|5|Arcadia Unified|Irvine Unified|Fremont Union High|
+|6|Manhattan Beach Unified|South Pasadena Unified|La Canada Unified|
+|7|Acalanes Union High|Manhattan Beach Unified|Oak Park Unified|
+|8|Oak Park Unified|Davis Joint Unified|Sierra Sands Unified|
+|9|Piedmont City Unified|Fremont Union High|Davis Joint Unified|
+|10|Palo Alto Unified|Oak Park Unified|Fremont Unified|
+
+---
+## Comments/Instructions for Graders
+
+- Initial data grab via API is performed in 'my-project3-getdata.ipynb'
+
+- Datasets are then processed in 'my-project3-data-cleaning.ipynb'
+
+- Cleaned datasets are merged and classified in 'my-project3-classification.ipynb'
+
+
+---
+## Sources & References
+
+#### Dataset Sources
+
+1.  File: [`act_2019_ca.csv`](./data/act_2019_ca.csv) .  “2019 ACT Scores in California by School.” California Department of Education.  ([source] (https://www.cde.ca.gov/ds/sp/ai/) | [data dictionary] (https://web.archive.org/web/20210831222336/https://www.cde.ca.gov/ds/sp/ai/reclayoutact19.asp))
+
+2.  File: [`sat_2019_ca.csv`](./data/sat_2019_ca.csv) . “2019 SAT Scores in California by School.” California Department of Education. ([source](https://www.cde.ca.gov/ds/sp/ai/) | [data dictionary](https://web.archive.org/web/20210831212915/https://www.cde.ca.gov/ds/sp/ai/reclayoutsat19.asp))
+
+3.  File: [`cgr16mo19.txt`](./data/cgr16mo19.txt) (Posted 2-Nov-2022). “College-Going Rate for HS Completers (16-month).” California Department of Education.  https://www.cde.ca.gov/ds/ad/filescgr16.asp
+
+
+<!-- NO?
+U.S. Department of Justice (DOJ) Office of Juvenile Justice and Delinquency Prevention (OJJDP)
+Easy Access to State and County Juvenile Court Case Counts (EZACO)
+https://www.ojjdp.gov/ojstatbb/ezaco/ -->
+
+
+#### Other References
+
+4. “Largest & Smallest Public School Districts.” California Department of Education. https://www.cde.ca.gov/ds/ad/ceflargesmalldist.asp
+
+5. “Best High Schools in California.” U.S. News & World Report L.P. https://www.usnews.com/education/best-high-schools/california
+
+
+
