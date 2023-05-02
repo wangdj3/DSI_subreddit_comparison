@@ -27,7 +27,7 @@ The Random Forest (with unlimited depth, single-word n-grams only, and without u
 |4|K Nearest Neighbors|75.19%|
 
 
-# ![RandomForest_ConfusionMatrix](https://git.generalassemb.ly/wangdj3/project-3/blob/master/assets/RandomForest_ConfusionMatrix.png)
+# ![RandomForest_ConfusionMatrix](assets/RandomForest_ConfusionMatrix.png)
 
 
 Top 15 Most Common Words in Combined Sample:
@@ -50,7 +50,7 @@ Top 15 Most Common Words in Combined Sample:
 |14|think|905|
 |15|watch|791|
 
-# ![15 most common words in combined sample](https://git.generalassemb.ly/wangdj3/project-3/blob/master/assets/15_most_common_words.png)
+# ![15 most common words in combined sample](assets/15_most_common_words.png)
 
 ---
 ## Data Background
