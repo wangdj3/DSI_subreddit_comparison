@@ -1,6 +1,6 @@
 # Project 3: Standardized Test Analysis
 
-# ![banner](https://git.generalassemb.ly/wangdj3/project-3/blob/master/assets/Banner.jpg)
+# ![banner](assets/Banner.jpg)
 ## A Classification Analysis of r/anime vs. r/Naruto
 
 ---
