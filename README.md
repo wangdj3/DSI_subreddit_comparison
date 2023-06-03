@@ -4,6 +4,7 @@
 ## Problem Statement A (No-Nonsense Version)
 
 A number of classification algorithms are explored in conjunction with NLP (Natural Language Processing) techniques to differentiate between text from two separate but related channels (or "subreddits") from the popular website [`Reddit`](https://www.reddit.com/).  Algorithms/techniques used include: Random Forest, Naive Bayes, K Nearest Neighbors, GridSearch; Text Normalization (lemmatizing, tokenizing, stop words), CountVectorizer, TfidfVectorizer.  Text data for the project was collected via the [`Pushshift Reddit API`](https://github.com/pushshift/api).
+
 ---
 ## Problem Statement B (The Fun Version)
 
@@ -14,6 +15,7 @@ Additionally, the team discovered <b>a manual on early 21st century data science
 <b>Combining the wisdom of these two cultural artifacts, we use these 21st century methods to analyze this 21st century data</b>.  Fascinating, no?  While we could <i>easily</i> use our ChatGPT version 205 to classify data with 100% accuracy every time, it seemed more interesting to use the contemporary data science methods of that same 21st century to classify our data.  We explored the use of natural language processing and several classification algorithms to differentiate between posts from r/anime vs. those from r/Naruto.  
 
 We present these findings at the 3023 Mars Conference on Pre World War 3 Humanoid Anthropology.  
+
 ---
 ## Executive Summary
 
