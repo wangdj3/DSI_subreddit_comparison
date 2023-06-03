@@ -1,5 +1,4 @@
 # NLP classification of subreddits - r/anime vs. r/Naruto
-
 # ![banner](assets/Banner.jpg)
 ## Problem Statement A (No-Nonsense Version)
 
