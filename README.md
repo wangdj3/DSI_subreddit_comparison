@@ -4,18 +4,18 @@
 ## A Classification Analysis of r/anime vs. r/Naruto
 
 ---
-## Problem Statement (No-Nonsense Version)
+## Problem Statement A (No-Nonsense Version)
 
 A number of classification algorithms are explored in conjunction with NLP (Natural Language Processing) techniques to differentiate between text from two separate but related channels (or "subreddits") from the popular website [`Reddit`](https://www.reddit.com/).  Algorithms/techniques used include: Random Forest, Naive Bayes, K Nearest Neighbors, GridSearch; Text Normalization (lemmatizing, tokenizing, stop words), CountVectorizer, TfidfVectorizer.  Text data for the project was collected via the [`Pushshift Reddit API`](https://github.com/pushshift/api).
 
 ---
-## Problem Statement (The Fun Version)
+## Problem Statement B (The Fun Version)
 
-During a recent expedition to the ruins of alpha-Earth, an exploration team recovered a semi-operable server containing data from the popular 21st century website [`Reddit`](https://www.reddit.com/), with intact data from two notable subreddits: [`r/anime`](https://www.reddit.com/r/anime) and [`r/Naruto`](https://www.reddit.com/r/Naruto).  
+During a recent expedition to the ruins of alpha-Earth, an exploration team recovered a semi-operable server containing <b>data from the popular 21st century website [`Reddit`](https://www.reddit.com/)</b>, with intact data from two notable subreddits: [`r/anime`](https://www.reddit.com/r/anime) and [`r/Naruto`](https://www.reddit.com/r/Naruto).  
 
-Additionally, the team discovered a manual on early 21st century data science techniques for classification and machine learning.  These data remnants were transmitted to my team at the Neo-Earth Research Council for further study.  
+Additionally, the team discovered <b>a manual on early 21st century data science techniques for classification and machine learning</b>.  These data remnants were transmitted to my team at the Neo-Earth Research Council for further study.  
 
-Combining the wisdom of these two cultural artifacts, we use these 21st century methods to analyze this 21st century data.  Fascinating, no?  We explored the use of natural language processing and several classification algorithms to differentiate between posts from r/anime vs. those from r/Naruto.  
+<b>Combining the wisdom of these two cultural artifacts, we use these 21st century methods to analyze this 21st century data</b>.  Fascinating, no?  While we could <i>easily</i> use our ChatGPT version 205 to classify data with 100% accuracy every time, it seemed more interesting to use the contemporary data science methods of that same 21st century to classify our data.  We explored the use of natural language processing and several classification algorithms to differentiate between posts from r/anime vs. those from r/Naruto.  
 
 We present these findings at the 3023 Mars Conference on Pre World War 3 Humanoid Anthropology.  
 
@@ -27,35 +27,46 @@ The Random Forest (with unlimited depth, single-word n-grams only, and without u
 |Rank|Algorithm|Accuracy|
 |---|---|---|
 |1|Random Forest|88.03%|
-|2|TfidfVectorizer|87.12%|
-|3|Naive Bayes|86.28%|
+|2|Naive Bayes + TfidfVectorizer|87.12%|
+|3|Naive Bayes = CountVectorizer|86.28%|
 |4|K Nearest Neighbors|75.19%|
 
 
 # ![RandomForest_ConfusionMatrix](assets/RandomForest_ConfusionMatrix.png)
 
 
-Top 15 Most Common Words in Combined Sample:
+Top 15 Most Common Words in Combined Sample (custom stopwords removed):
 
 |Rank|Word|Count|
 |---|---|---|
-|1|https|5497|
-|2|anime|4320|
-|3|naruto|2544|
-|4|like|1784|
-|5|episode|1710|
-|6|com|1681|
-|7|redd|1490|
-|8|link|1470|
-|9|just|1457|
-|10|youpoll|1352|
-|11|amp|1226|
-|12|sasuke|945|
-|13|know|917|
-|14|think|905|
-|15|watch|791|
+|1|anime|4521|
+|2|naruto|2688|
+|3|like|1894|
+|4|episode|1835|
+|5|watch|1406|
+|6|youpoll|1324|
+|7|think|1148|
+|8|know|1133|
+|9|sasuke|967|
+|10|character|967|
+|11|make|928|
+|12|time|803|
+|13|use|759|
+|14|people|657|
+|15|good|651|
+
 
 # ![15 most common words in combined sample](assets/15_most_common_words.png)
+
+---
+## Topic Background
+<i>Why do we care? Why is this (r/anime vs. r/Naruto) a relevant comparison?</i>
+
+To give a quick primer on the subjects of our study, in case you’re not particularly familiar with 21st century pop culture.  Anime was a term used to refer to cartoons or animation originating from the Pre-World War 3 country known as Japan.  Though there were many sub-styles and genres, the other topic of our study today was one of the most popular series within the ‘shounen’ genre, meaning literally “young boys”.  
+
+That series is Naruto.  And while there were other very popular anime series before and after it, Naruto occupies a very unique place in animation history because its popularity coincided with (& helped fuel) an explosion in the availability and popularity of anime/manga in the Western world.  It’s effects on the genre were significant enough that it can be considered the quintessential shounen series of the early 21st century, upon which many subsequent anime tropes were based.
+
+In the same way that few discussions of Elizabethan English literature ever completely shy away from comparisons or references to Shakespeare, many anime-related discussions in the decades following the release of Naruto would draw plot and character comparisons with and eventually circle back to the topic of Naruto.  Naruto could accurately be described as the Hamlet of the greater corpus of early 21st century anime.  For this reason, a relevant comparison exists between general discussion of anime as a whole vs. discussion specifically about Naruto.
 
 ---
 ## Data Background
@@ -65,12 +76,13 @@ Our data was scraped from reddit using the Pushshift Reddit API.[1]  5,000 submi
 ---
 ## Primary Findings
 
-- While all classification algorithms tested outperformed the baseline (50.8%) significantly.  
+- All classification algorithms tested outperformed the baseline (50.8%) significantly.  
 
 - The Random Forest had the highest prediction accuracy (88.03%).  
 
-- The K Nearest Neighbors method performed worst out of the algorithms evaluated
+- The K Nearest Neighbors method performed worst out of the algorithms evaluated.
 
+- Though words/phrases such as "link", "poll", "anilist", etc. (tell-tale indicators of outbound links to external sites) were originally considered 'uninteresting' and removed as stopwords; their use and occurrence actually DO appear to be indicative/predictive of one subreddit over the other, and were subsequently added back in.
 
 
 ### Ranking of Classification Algorithms used:
