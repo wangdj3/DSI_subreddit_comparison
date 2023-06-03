@@ -1,12 +1,17 @@
-# Project 3: Standardized Test Analysis
+# NLP classification of subreddits
 
 # ![banner](assets/Banner.jpg)
 ## A Classification Analysis of r/anime vs. r/Naruto
 
 ---
-## Problem Statement
+## Problem Statement (No Nonsense Version)
 
-During a recent expedition to the ruins of alpha-Earth, an exploration team recovered a semi-operable server containing data from the popular 21st century website Reddit, with intact data from two notable subreddits: r/anime and r/Naruto.  
+A number of classification algorithms are explored in conjunction with NLP (Natural Language Processing) techniques to differentiate between text from two separate but related channels (or "subreddits") from the popular website [`Reddit`](https://www.reddit.com/).  Algorithms/techniques used include: Random Forest, TfidfVectorizer, Naive Bayes, K Nearest Neighbors.  Text data for the project was collected via the [`Pushshift Reddit API`](https://github.com/pushshift/api).
+
+---
+## Problem Statement (The Fun Version)
+
+During a recent expedition to the ruins of alpha-Earth, an exploration team recovered a semi-operable server containing data from the popular 21st century website [`Reddit`](https://www.reddit.com/), with intact data from two notable subreddits: [`r/anime`](https://www.reddit.com/r/anime) and [`r/Naruto`](https://www.reddit.com/r/Naruto).  
 
 Additionally, the team discovered a manual on early 21st century data science techniques for classification and machine learning.  These data remnants were transmitted to my team at the Neo-Earth Research Council for further study.  
 
