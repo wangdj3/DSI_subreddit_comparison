@@ -4,9 +4,9 @@
 ## A Classification Analysis of r/anime vs. r/Naruto
 
 ---
-## Problem Statement (No Nonsense Version)
+## Problem Statement (No-Nonsense Version)
 
-A number of classification algorithms are explored in conjunction with NLP (Natural Language Processing) techniques to differentiate between text from two separate but related channels (or "subreddits") from the popular website [`Reddit`](https://www.reddit.com/).  Algorithms/techniques used include: Random Forest, TfidfVectorizer, Naive Bayes, K Nearest Neighbors.  Text data for the project was collected via the [`Pushshift Reddit API`](https://github.com/pushshift/api).
+A number of classification algorithms are explored in conjunction with NLP (Natural Language Processing) techniques to differentiate between text from two separate but related channels (or "subreddits") from the popular website [`Reddit`](https://www.reddit.com/).  Algorithms/techniques used include: Random Forest, Naive Bayes, K Nearest Neighbors, GridSearch; Text Normalization (lemmatizing, tokenizing, stop words), CountVectorizer, TfidfVectorizer.  Text data for the project was collected via the [`Pushshift Reddit API`](https://github.com/pushshift/api).
 
 ---
 ## Problem Statement (The Fun Version)
