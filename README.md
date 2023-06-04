@@ -28,32 +28,13 @@ The Random Forest (with unlimited depth, single-word n-grams only, and without u
 |3|Naive Bayes = CountVectorizer|86.28%|
 |4|K Nearest Neighbors|75.19%|
 
-
+The confusion matrix for the best performing model is presented below:
 # ![RandomForest_ConfusionMatrix](assets/RandomForest_ConfusionMatrix.png)
 
 
-Top 15 Most Common Words in Combined Sample (custom stopwords removed):
-
-|Rank|Word|Count|
-|---|---|---|
-|1|anime|4521|
-|2|naruto|2688|
-|3|like|1894|
-|4|episode|1835|
-|5|watch|1406|
-|6|youpoll|1324|
-|7|think|1148|
-|8|know|1133|
-|9|sasuke|967|
-|10|character|967|
-|11|make|928|
-|12|time|803|
-|13|use|759|
-|14|people|657|
-|15|good|651|
-
-
+The list of Top 15 Most Common Words in the Combined Sample (custom stopwords removed) are given below:
 # ![15 most common words in combined sample](assets/15_most_common_words.png)
+*Though words/phrases such as "link", "poll", "anilist", etc. (tell-tale indicators of outbound links to external sites) were originally considered 'uninteresting' and removed as stopwords; their use and occurrence actually DO appear to be indicative/predictive of one subreddit over the other, and were subsequently added back in.
 
 ---
 ## Topic Background
