@@ -19,7 +19,7 @@ We present these findings at the 3023 Mars Conference on Pre World War 3 Humanoi
 ---
 ## Executive Summary
 
-The Random Forest (with unlimited depth, single-word n-grams only, and without using stop words) narrowly outperformed its competitors with an accuracy of 88.03%.
+5,000 submissions were scraped from both r/anime and r/Naruto subreddits, using the the Pushshift Reddit API[1], after which duplicates were removed.  NLP & structured learning techniques were used to train models to distinguish between posts originating from the two subreddits.  Of the various classification algorithms evaluated, the Random Forest (with unlimited depth, single-word n-grams only, and without using stop words) narrowly outperformed its competitors with an accuracy of 88.03%.
 
 |Rank|Algorithm|Accuracy|
 |---|---|---|
@@ -45,11 +45,6 @@ To give a quick primer on the subjects of our study (in case you’re not partic
 That series is Naruto.  And while there were other very popular anime series before and after it, Naruto occupies a very unique place in animation history because its popularity coincided with (& helped fuel) an explosion in the availability and popularity of anime/manga in the Western world.  It’s effects on the genre were significant enough that it can be considered the quintessential shounen series of the early 21st century, upon which many subsequent anime tropes were based.
 
 In the same way that few discussions of Elizabethan English literature ever completely shy away from comparisons or references to Shakespeare, many anime-related discussions in the decades following the release of Naruto would draw plot and character comparisons with and eventually circle back to the topic of Naruto.  Naruto could accurately be described as the Hamlet of the greater corpus of early 21st century anime.  For this reason, a relevant comparison exists between general discussion of anime as a whole vs. discussion specifically about Naruto.
-
----
-## Data Background
-
-Our data was scraped from reddit using the Pushshift Reddit API.[1]  5,000 submissions were scraped from both r/anime and r/Naruto subreddits, after which duplicates were removed.
 
 ---
 ## Primary Findings
