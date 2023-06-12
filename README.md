@@ -40,7 +40,7 @@ The list of Top 15 Most Common Words in the Combined Sample (custom stopwords re
 ## Topic Background
 <i>Why do we care? Why is this (r/anime vs. r/Naruto) a relevant comparison?</i>
 
-To give a quick primer on the subjects of our study, in case you’re not particularly familiar with 21st century pop culture.  Anime was a term used to refer to cartoons or animation originating from the Pre-World War 3 country known as Japan.  Though there were many sub-styles and genres, the other topic of our study today was one of the most popular series within the ‘shounen’ genre, meaning literally “young boys”.  
+To give a quick primer on the subjects of our study (in case you’re not particularly familiar with 21st century pop culture): Anime was a term used to refer to cartoons or animation originating from the Pre-World War 3 country known as Japan.  Though there were many sub-styles and genres, the other topic of our study today was one of the most popular series within the ‘shounen’ genre, meaning literally “young boys”.  
 
 That series is Naruto.  And while there were other very popular anime series before and after it, Naruto occupies a very unique place in animation history because its popularity coincided with (& helped fuel) an explosion in the availability and popularity of anime/manga in the Western world.  It’s effects on the genre were significant enough that it can be considered the quintessential shounen series of the early 21st century, upon which many subsequent anime tropes were based.
 
